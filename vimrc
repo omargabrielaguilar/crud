@@ -11,7 +11,7 @@ Plugin 'rakr/vim-one'
 Plugin 'vim-python/python-syntax'
 Plugin 'valloric/youcompleteme'
 Plugin 'mattn/emmet-vim'
-
+Plugin 'ryanoasis/vim-devicons'
 
 call vundle#end()
 
@@ -47,6 +47,7 @@ au BufNewFile,BufRead *.py
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set encoding=UTF-8
 
 colorscheme everblush
 
