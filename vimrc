@@ -49,12 +49,10 @@ set softtabstop=4
 set shiftwidth=4
 set encoding=UTF-8
 
-colorscheme everblush
-
 syntax enable
 
 
-" Indentar automáticamente.=4
+" Indentar automáticamente.=5
 set autoindent
 
 " Mostrar número de línea
@@ -136,3 +134,10 @@ autocmd InsertLeave * set nocursorline
 "set nocursorline
 
 " trasparent end
+
+"vim autosave
+augroup autosave
+    autocmd!
+    autocmd BufRead * if &filetype == "" | setlocal ft=text | endif
+    autocmd FileType * autocmd TextChanged,InsertLeave <buffer> if &readonly == 0 | silent write | endif
+augroup END
