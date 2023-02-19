@@ -1,0 +1,4 @@
+xrandr --output HDMI-A-0 --set underscan on --set "underscan vborder" 45 --set "underscan hborder" 90
+
+sudo setxkbmap -layout 'es,es' -model pc105
+
