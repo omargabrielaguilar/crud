@@ -54,5 +54,15 @@ return require('packer').startup(function(use)
     use 'kyazdani42/nvim-web-devicons'
 
     use 'tpope/vim-commentary'
+
+    -- inside setup function
+    -- packer.startup(function(use)
+    use { 'dasupradyumna/midnight.nvim' }
+    -- end)
+
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
 end
 )
